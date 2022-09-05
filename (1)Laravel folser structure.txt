@@ -1,0 +1,58 @@
+1. app folder:-core code in app folder (controller,Model,Middle wheres, service provider)
+	*console folder:- custom commands
+
+	*Exception's folder:- exceptions are written in this folder
+
+	*Http(controllers):- controllers is our central unit.model & view ko control karti ha.
+			    databasee aur html kay darmayan middle layer hoti ha.
+
+	*Http(Middleware):- user access karnay ki kosis karta ha(loggedin ha za nahin) or 
+	we add filter's in middleware means wohi log a saktay hain jo loggedin hain za 18 saal say kam log nahin a saktay
+	hain. In checks ko ham ek jaga lagany kay baad baar baar use kar saktay hain pori application maan bi use kar saktay hain.
+	
+	*Kernel.php:- use to rigester middleware.
+
+	*Models:- connection kay liay jo files use hoti hain wo use kartay hain.
+
+	*user.php:- users name ki jo database maan table ho gi us say connect kary gi.
+
+	*providers:- authorization of signup,login kay liay ham AuthServiceProvider.php use kartay hain.
+		    service provider ham provider waly folder maan likhtay hain.
+
+2. bootstrap:-(app.php)application ko load karnay kay kam ati ha. laravel ki files ko load karti ha html kay sath.
+
+	*cache:- is maan cache wali laravel ki files pari rahtin hain.Generate hoti rahtin hain.
+
+3. config folder:- is maan ham all type ki configration wagara karwaty hain.
+
+4. public folder:- is maan ham public files rakhtay hain. External css wagara, bootstrap 
+
+5. resource folder:- maan ham uncompiled files rakhtay hain.
+
+	resources(views(welcome.blade.php))is maan html likhi hoti ha jo view ho rahi ho gi.
+
+6. routes folder:- is maan api,web,console kay routes wagara likhtay hain.
+
+7. storage folder:- is maan jo files upload kartay hain wo rakhtay hain.
+
+8. tests folder:- is maan jo test cases likhtay hain wo hoon gay.
+
+9. vendor folder:- is maan dependencies files hon gi. composer.json maan jitnay bi package daltay hain wo hoon gay.
+
+	.env.example:- ek dami environment ki file ha.
+	artisan:- artisan commands ko auto load karti ha.
+	composer.lock:- is maan application ki detail wagara hoti ha(name,version,etc..,)
+	package.json:- react.js or vue.js kay liay use kartahy hain.
+	php unit.xml:- test folder kay sath jo test cases likhay hain un kay liay use maan ata ha.
+	server.php:- appachi maan read write kay liay use maan ati ha.
+	webpack.mix.js:- public files ko auto-load karwany kay use maan ati ha.aur tub hi use maan ati ha jab ham
+	front-end ki library za frame-work use kar rahy hon to. 
+
+
+
+
+
+
+
+
+
